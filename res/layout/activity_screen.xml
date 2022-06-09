@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:numpic="http://schemas.android.com/apk/res/com.ioigoume.screenenergy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenActivity" >
+    
+    <ToggleButton
+		        android:id="@+id/toggleBtn_Enable"
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="16dp"
+		        android:textOff="Off"
+		        android:textOn="On" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleBtn_Enable"
+        android:gravity="center|left"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tableRowRed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:layout_marginLeft="-40dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewRed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"                
+                android:layout_weight="1"
+                android:contentDescription="@string/img_content_red"
+                android:src="@drawable/red" />
+            
+            <com.ioigoume.numberpicker.NumberPicker
+                android:id="@+id/PickerRed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:orientation="horizontal"
+                numpic:range="255" ></com.ioigoume.numberpicker.NumberPicker>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_marginLeft="-40dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_content_green"
+                android:src="@drawable/green" />
+            
+            <com.ioigoume.numberpicker.NumberPicker
+                android:id="@+id/PickerGreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:orientation="horizontal"
+                numpic:range="255" ></com.ioigoume.numberpicker.NumberPicker>
+            
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_marginLeft="-40dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_content_blue"
+                android:src="@drawable/blue" />
+            
+            <com.ioigoume.numberpicker.NumberPicker
+                android:id="@+id/PickerBlue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:orientation="horizontal"
+                numpic:range="255" ></com.ioigoume.numberpicker.NumberPicker>
+            
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowBrightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_marginLeft="-40dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewBrightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_content_brightness"
+                android:src="@drawable/light" />
+            
+            <com.ioigoume.numberpicker.NumberPicker
+                android:id="@+id/PickerBrightness"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:orientation="horizontal"
+                numpic:range="100" ></com.ioigoume.numberpicker.NumberPicker>
+            
+
+        </TableRow>
+        
+        <!-- 
+         <TableRow
+             android:id="@+id/tableRowContrast"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="20"
+             android:layout_marginLeft="-40dp"
+             android:orientation="horizontal" >
+
+             <ImageView
+                 android:id="@+id/imageViewContrast"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:contentDescription="@string/img_content_contrast"
+                 android:src="@drawable/fog" />
+             
+             <com.ioigoume.numberpicker.NumberPicker
+                android:id="@+id/PickerContrast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:orientation="horizontal"
+                numpic:range="100" ></com.ioigoume.numberpicker.NumberPicker>
+             
+
+        </TableRow>
+         -->
+         
+         <TableRow
+             android:id="@+id/tableRowAlpha"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="20"
+             android:layout_marginLeft="-40dp"
+             android:orientation="horizontal" >
+
+             <ImageView
+                 android:id="@+id/imageViewAlpha"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:contentDescription="@string/img_content_alpha"
+                 android:src="@drawable/alpha" />
+             
+             <com.ioigoume.numberpicker.NumberPicker
+                android:id="@+id/PickerAlpha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:orientation="horizontal"
+                numpic:range="255" ></com.ioigoume.numberpicker.NumberPicker>
+             
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

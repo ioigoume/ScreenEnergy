@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- APPLICATION NAMES -->
+    <!-- ID -->
+    <string name="increment_id">up</string>
+    <string name="decrement_id">down</string>
+    <string name="text_id">text</string>
+
+    <string name="app_name">SCOLOR</string>
+
+    <!-- PREFERENCES -->
+    <string name="menu_settings">Settings</string>
+
+    <!-- BUTTONS -->
+    <string name="btn_toggle_lock">Lock</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_background_service">BackgroundService</string>
+    
+    <!-- TITLES -->
+    <string name="app_notification_id">notification_id</string>
+
+    <!-- IMAGES CONTENT DESCRIPTION -->
+    <string name="img_content_red">red_icon</string>
+    <string name="img_content_blue">blue_icon</string>
+    <string name="img_content_green">green_icon</string>
+    <string name="img_content_contrast">contrast_icon</string>
+    <string name="img_content_brightness">brightness_icon</string>
+    <string name="img_content_alpha">alpha_icon</string>
+    <string name="img_content_transp">transp_icon</string>
+    
+    <!-- PREFERENCES FILENAME -->
+    <string name="filename_prefs">screen_saved_values</string>
+    
+    <!-- DEFAULT SHARED VALUES -->
+    <string name="red_defaultvalue">0</string>
+    <string name="green_defaultvalue">0</string>
+    <string name="blue_defaultvalue">0</string>
+    <string name="contrast_defaultvalue">0</string>
+    <string name="brightness_defaultvalue">0</string>
+    <string name="alpha_defaultvalue">0</string>
+    
+    <!-- SHARED VALUES KEYS -->
+    <string name="key_red">red</string>
+    <string name="key_blue">blue</string>
+    <string name="key_green">green</string>
+    <string name="key_contrast">contrast</string>
+    <string name="key_brightness">brightness</string>
+    <string name="key_alpha">alpha</string>
+</resources>
